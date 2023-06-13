@@ -134,7 +134,6 @@
 <script>
 import KUtils from "@/core/utils";
 import Constants from "@/store/constants";
-import { VAceEditor } from 'vue3-ace-editor'
 import { defineAsyncComponent } from 'vue'
 /* import DataType from "./DataType";
 import EditorShow from "./EditorShow"; */
@@ -231,7 +230,6 @@ var instance = null;
 export default {
   name: "Document",
   components: {
-    editor: VAceEditor,
     "DataType": defineAsyncComponent(() => import('./DataType.vue')),
     "EditorShow": defineAsyncComponent(() => import('./EditorShow.vue'))
   },

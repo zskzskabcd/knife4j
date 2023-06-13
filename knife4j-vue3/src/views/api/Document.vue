@@ -161,15 +161,12 @@
  import Constants from "@/store/constants";
  import markdownSingleText from "@/components/officeDocument/markdownSingleTransform";
  import markdownSingleTextUs from "@/components/officeDocument/markdownSingleTransformUS";
- /* import DataType from "./DataType";
- import EditorShow from "./EditorShow"; */
  import ClipboardJS from "clipboard";
  import uniqueId from "lodash/uniqueId";
  import isObject from 'lodash/isObject'
  import has from 'lodash/has'
  import keys from 'lodash/keys'
  import cloneDeep from 'lodash/cloneDeep'
- import { VAceEditor } from 'vue3-ace-editor'
  import { computed, defineAsyncComponent } from 'vue'
  import { useGlobalsStore } from '@/store/modules/global.js'
  import { useknife4jModels } from '@/store/knife4jModels.js'
@@ -179,7 +176,6 @@
  export default {
    name: "Document",
    components: {
-     editor: VAceEditor,
      "DataType": defineAsyncComponent(() => import('./DataType.vue')),
      "EditorShow": defineAsyncComponent(() => import('./EditorShow.vue'))
    },
